@@ -1,8 +1,8 @@
 {
-  "name": "cinescope",
+  "name": "movie-website",
   "version": "1.0.0",
   "private": true,
-  "description": "A movie discovery app built with React - college project",
+  "description": "A movie discovery website",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
