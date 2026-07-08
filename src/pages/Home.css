@@ -1,0 +1,46 @@
+.hero {
+  background: #f2e8cf;
+  border-bottom: 1px solid var(--color-border);
+  padding: 70px 0 60px;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 2.4rem;
+  max-width: 600px;
+  margin: 0 auto 16px;
+}
+
+.hero-content h1 span {
+  color: var(--color-primary);
+}
+
+.hero-content p {
+  color: var(--color-text-muted);
+  max-width: 480px;
+  margin: 0 auto 28px;
+  font-size: 1rem;
+}
+
+.hero-search {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.movie-section {
+  padding: 50px 0;
+}
+
+.movie-section:first-of-type {
+  padding-top: 50px;
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 50px 0 40px;
+  }
+
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+}

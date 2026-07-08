@@ -1,0 +1,15 @@
+.search-page {
+  padding: 40px 20px 60px;
+}
+
+.no-results {
+  text-align: center;
+  padding: 70px 0;
+  color: var(--color-text-muted);
+}
+
+.no-results p {
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+  color: var(--color-text);
+}

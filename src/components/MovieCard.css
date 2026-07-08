@@ -1,0 +1,85 @@
+.movie-card {
+  display: block;
+  background-color: var(--color-card);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+/* subtle hover lift - nothing too dramatic */
+.movie-card:hover {
+  transform: translateY(-5px);
+  background-color: var(--color-card-hover);
+}
+
+.poster-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  background-color: #000;
+}
+
+.poster-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* little yellow rating badge in the top-left corner of the poster */
+.rating-badge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: var(--color-accent);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 3px 7px;
+  border-radius: 4px;
+}
+
+/* heart icon button in the top-right corner */
+.favorite-icon {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.favorite-icon:hover {
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.favorite-icon.active {
+  color: var(--color-primary);
+}
+
+.movie-card-info {
+  padding: 10px 12px 14px;
+}
+
+.movie-card-info h3 {
+  font-size: 0.92rem;
+  font-weight: 600;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.movie-card-info p {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  margin-top: 3px;
+}
