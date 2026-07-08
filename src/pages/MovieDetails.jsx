@@ -39,7 +39,7 @@ function MovieDetails() {
     
     window.scrollTo(0, 0);
     
-  }, [id]);
+  }, [id ,user]);
 
   function handleWatchlistClick() {
     if (!user) {
